@@ -53,12 +53,12 @@ button {
     font-size: small;
     border: none;
     border-radius: 10px;
-    
 }
 
 button:hover,
 button:focus {
-    opacity: .75;
+    /* opacity: .75; */
+    background-color:  hsl(212, 21%, 14%);
 }
 
 svg {
