@@ -1,0 +1,144 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* Text Style  */
+p {
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.category-name {
+    letter-spacing: .25rem;
+    margin: 0;
+    padding-bottom: .25rem;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+/* Price  */
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    display: inline;
+}
+
+.discount-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size:xx-large;
+}
+
+.normal-price {
+    color:hsl(228, 12%, 48%);
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    padding-right: 5rem;
+    padding-top: .75rem;
+}
+
+/* Button  */
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+button:hover,
+button:focus {
+    opacity: .75;
+}
+
+svg {
+    margin-right: .5rem;
+}
+
+/* Page Footer  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 850px) {
+    .container {
+        display: flex;
+        margin-top: 10%;
+        max-width: 750px;
+    }
+    
+    .image {
+        height: 540px;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+        flex: 1;
+    }
+    
+    .card-text {
+        border-radius: 0 10px 10px 0;
+        background-color: hsl(0, 0%, 100%);
+        max-width: 360px;
+        padding: 2rem;
+    } 
+
+    h1 {
+        padding-top: 1rem;
+    }
+
+    p {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    ul {
+        padding-bottom: 1rem;
+    }
+
+    button {
+        padding: 1em 7.2em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        max-width: 375px;
+        margin: auto;
+        margin-top: 10%;
+        padding: 0 0 1.5rem;
+    }
+
+    .image {
+        height: 241px;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    button {
+        padding: 1em 8.6em;
+    }
+
+    /* Text Container  */
+    .card-text {
+        margin: 1.5rem;
+    }
+}
